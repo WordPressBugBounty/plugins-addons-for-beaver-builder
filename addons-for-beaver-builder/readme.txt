@@ -5,7 +5,7 @@ Contributors: livemesh, freemius
 Tags: beaver builder, beaver builder addons, beaver builder extensions, beaver builder modules, page builder, portfolio, carousel, posts grid
 Requires at least: 5.8
 Tested up to: 6.6
-Stable Tag: 3.7
+Stable Tag: 3.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -110,6 +110,9 @@ Pls install and activate the <a href="https://wordpress.org/plugins/portfolio-po
 
 == Changelog ==
 
+
+= 3.8 =
+* Freemius SDK update to 2.8.1
 
 = 3.7 =
 * Added - Escaping the data output for posts grid,testimonials, testimonials slider, clients, team members, heading widgets for enhanced validation of user input.
