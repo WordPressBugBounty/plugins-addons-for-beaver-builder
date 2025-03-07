@@ -8,7 +8,7 @@
  * Author URI: https://livemeshwp.com/beaver-builder
  * License: GPL3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
- * Version: 3.8
+ * Version: 3.9
  * Text Domain: livemesh-bb-addons
  * Domain Path: languages
  *
@@ -34,7 +34,7 @@ if ( !defined( 'ABSPATH' ) ) {
 // Ensure the free version is deactivated if premium is running
 if ( !function_exists( 'labb_fs' ) ) {
     // Plugin version
-    define( 'LABB_VERSION', '3.8' );
+    define( 'LABB_VERSION', '3.9' );
     // Plugin Root File
     define( 'LABB_PLUGIN_FILE', __FILE__ );
     // Plugin Folder Path
@@ -84,12 +84,12 @@ if ( !function_exists( 'labb_fs' ) ) {
         ?>
         <script type="text/javascript">
             (function () {
-                window.labb_fs = {can_use_premium_code: <?php
-                    echo json_encode( labb_fs()->can_use_premium_code() );
-                    ?>};
+                window.labb_fs = {can_use_premium_code: <?php 
+        echo json_encode( labb_fs()->can_use_premium_code() );
+        ?>};
             })();
         </script>
-        <?php
+        <?php 
     }
 
     add_action( 'wp_head', 'labb_fs_add_licensing_helper' );
