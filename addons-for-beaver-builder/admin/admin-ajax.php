@@ -15,13 +15,14 @@ class LABB_Admin_Ajax {
 
     public function __construct() {
 
-        // retrieve all ajax string to localize
-        $this->localize_strings();
         $this->init_hooks();
 
     }
 
     public function init_hooks() {
+
+        // retrieve all ajax string to localize
+        add_action('admin_init', array($this, 'localize_strings'));
 
         // Register backend ajax action
         add_action('wp_ajax_labb_admin_ajax', array($this, 'labb_admin_ajax'));
